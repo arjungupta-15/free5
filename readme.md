@@ -121,27 +121,7 @@ ShopNow MERN Application
 5. **HELM Deploy**: HELM chart deploys application to Kubernetes cluster
 6. **Verification**: Deployment is verified and monitored
 
-## Project Structure
 
-```
-free5/
-├── HEM Project.docx        # Original project documentation
-├── readme.md              # This documentation
-└── screenshots/           # All project screenshots
-    ├── image1.png        # Project overview
-    ├── image2.png        # Backend deployment
-    ├── image3.png        # Backend configuration
-    ├── image4.png        # Frontend deployment
-    ├── image5.png        # Frontend configuration
-    ├── image6.png        # Git repository
-    ├── image7.png        # CI/CD pipeline setup
-    ├── image8.png        # Pipeline configuration
-    ├── image9.png        # Build process
-    ├── image10.png       # Deployment process
-    ├── image11.png       # Pipeline monitoring
-    ├── image12.png       # Final deployment
-    └── image13.png       # Pipeline success
-```
 
 ## Challenges and Solutions
 
