@@ -20,6 +20,54 @@ Instead of the originally suggested repositories, we have used **ShopNow** appli
 
 ---
 
+## Architecture Overview
+
+```
+MERN Application with Kubernetes & HELM
+├── Frontend (React.js)
+│   ├── Docker Container
+│   ├── Kubernetes Deployment
+│   ├── Service Configuration
+│   └── Ingress Rules
+├── Backend Services
+│   ├── Node.js/Express API
+│   ├── Docker Container
+│   ├── Kubernetes Deployment
+│   ├── Service Configuration
+│   └── Database Connection
+├── Database (MongoDB)
+│   ├── Persistent Volume Claims
+│   └── StatefulSet Configuration
+├── HELM Chart
+│   ├── Templates Directory
+│   │   ├── Deployment Templates
+│   │   ├── Service Templates
+│   │   └── Ingress Templates
+│   ├── Values.yaml
+│   └── Chart.yaml
+└── CI/CD Pipeline (Jenkins)
+    ├── Source Code Management
+    ├── Build Stage
+    ├── Test Stage
+    ├── Docker Build & Push
+    ├── HELM Package
+    └── Kubernetes Deploy
+```
+
+## Deployment Flow
+
+1. **Code Commit**: Developer pushes code to Git repository
+2. **Jenkins Trigger**: Webhook triggers Jenkins pipeline automatically
+3. **Build & Test**: Application components are built and tested
+4. **Docker Images**: Container images are created and pushed to registry
+5. **HELM Package**: Application is packaged using HELM charts
+6. **Kubernetes Deploy**: HELM deploys application to Kubernetes cluster
+7. **Service Discovery**: Kubernetes services enable component communication
+8. **Load Balancing**: Traffic is distributed across multiple pods
+9. **Monitoring**: Deployment status and application health are monitored
+
+---
+
 ## Kubernetes Deployment
 
 ### Backend Deployment
