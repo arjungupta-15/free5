@@ -137,37 +137,7 @@ Automated build and deployment pipeline using Jenkins with:
 ✅ **Load Balancing**: High availability and traffic distribution  
 ✅ **Monitoring**: Pipeline and deployment monitoring  
 
-## Project Architecture
 
-```
-ShopNow MERN Application
-├── Frontend (React.js)
-│   ├── Kubernetes Deployment
-│   ├── Service Configuration
-│   └── Ingress Rules
-├── Backend (Node.js/Express)
-│   ├── Kubernetes Deployment
-│   ├── Service Configuration
-│   └── Database Connection
-├── HELM Chart
-│   ├── Templates
-│   ├── Values.yaml
-│   └── Chart.yaml
-└── Jenkins Pipeline
-    ├── Build Stage
-    ├── Test Stage
-    ├── Docker Build & Push
-    └── Kubernetes Deploy
-```
-
-## Deployment Process
-
-1. **Code Commit**: Developer pushes code to Git repository
-2. **Jenkins Trigger**: Webhook triggers Jenkins pipeline
-3. **Build & Test**: Application is built and tested
-4. **Docker Image**: Container images are created and pushed to registry
-5. **HELM Deploy**: HELM chart deploys application to Kubernetes cluster
-6. **Verification**: Deployment is verified and monitored
 
 
 
